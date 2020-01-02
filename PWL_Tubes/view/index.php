@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
     <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/form.css">
+
 </head>
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 
@@ -45,17 +47,33 @@
                         <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
                             <li><a href="" class="nav-link">Movies</a></li>
                             <li><a href="" class="nav-link">Theaters</a></li>
-                            <li><a href="" class="nav-link">Sign In</a></li>
+                            <li><a class="nav-link login-trigger" data-target="#login" data-toggle="modal">Sign In</a></li>
+                            <div id="login" class="modal fade" role="dialog">
+                                <div class="modal-dialog">
+
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <button data-dismiss="modal" class="close">&times;</button>
+                                            <h4>Login</h4>
+                                            <form>
+                                                <input type="text" name="username" class="username form-control" placeholder="Username"/>
+                                                <input type="password" name="password" class="password form-control" placeholder="password"/>
+                                                <input class="btn login" type="submit" value="Login" />
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </ul>
                     </nav>
                 </div>
                 <div class="col-6 d-inline-block d-xl-none ml-md-0 py-3"><a href="#"
                                                                             class="site-menu-toggle js-menu-toggle text-white float-right"><span>
                                 class="icon-menu h3"></span></a></div>
-
             </div>
         </div>
     </header>
+
 
     <div class="site-block-wrap">
         <div class="owl-carousel with-dots">
@@ -100,6 +118,8 @@
     </div>
 
     <div class="site-section" id="properties-section">
+                    <!--        NOW SHOWING     -->
+                    <!--        MOVIES          -->
         <h1 style="text-align: center; color: #333333">NOW SHOWING</h1>
         <br>
         <div class="container">
@@ -148,6 +168,8 @@
                 </div>
             </div>
         </div>
+                        <!--        UPCOMING        -->
+                        <!--        MOVIES          -->
         <h1 style="text-align: center; color: #333333">UPCOMING</h1>
         <br>
         <div class="container">
@@ -258,7 +280,6 @@
 <script src="js/aos.js"></script>
 <script src="js/jquery.fancybox.min.js"></script>
 <script src="js/jquery.sticky.js"></script>
-
 
 <script src="js/main.js"></script>
 
