@@ -5,25 +5,18 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,900|Oswald:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="fonts/icomoon/style.css">
-
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/jquery-ui.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
-
     <link rel="stylesheet" href="css/jquery.fancybox.min.css">
-
     <link rel="stylesheet" href="css/bootstrap-datepicker.css">
-
     <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
-
     <link rel="stylesheet" href="css/aos.css">
-
     <link rel="stylesheet" href="css/style.css">
-
 </head>
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 
@@ -40,11 +33,9 @@
 
 
     <header class="site-navbar py-4 js-sticky-header site-navbar-target" role="banner">
-
         <div class="container">
             <div class="row align-items-center">
-
-                <div class="col-6 col-xl-2">
+                <div class="col-6 col-xl-2 text-center">
                     <h1 class="mb-0 site-logo m-0 p-0"><a href="index.php" class="mb-0">TUBES PWL</a></h1>
                 </div>
 
@@ -52,26 +43,19 @@
                     <nav class="site-navigation position-relative text-right" role="navigation">
 
                         <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
-                            <li><a href="" class="nav-link">Link</a></li>
-                            <li><a href="" class="nav-link">Link</a></li>
-                            <li><a href="" class="nav-link">Link</a></li>
-                            <li><a href="" class="nav-link">Link</a></li>
-                            <li><a href="" class="nav-link">Link</a></li>
-                            <li><a href="" class="nav-link">Link</a></li>
+                            <li><a href="" class="nav-link">Movies</a></li>
+                            <li><a href="" class="nav-link">Theaters</a></li>
+                            <li><a href="" class="nav-link">Sign In</a></li>
                         </ul>
                     </nav>
                 </div>
-
-
                 <div class="col-6 d-inline-block d-xl-none ml-md-0 py-3"><a href="#"
-                                                                            class="site-menu-toggle js-menu-toggle text-white float-right"><span
+                                                                            class="site-menu-toggle js-menu-toggle text-white float-right"><span>
                                 class="icon-menu h3"></span></a></div>
 
             </div>
         </div>
-
     </header>
-
 
     <div class="site-block-wrap">
         <div class="owl-carousel with-dots">
@@ -114,7 +98,58 @@
         </div>
 
     </div>
+
     <div class="site-section" id="properties-section">
+        <h1 style="text-align: center; color: #333333">NOW SHOWING</h1>
+        <br>
+        <div class="container">
+            <div class="row large-gutters">
+                <div class="col-md-6 col-lg-4 mb-5 mb-lg-5 ">
+                    <div class="ftco-media-1">
+                        <div class="ftco-media-1-inner">
+                            <a href="" class="d-inline-block mb-4"><img src="images/tomcruise.jpg"
+                                                                        alt="FImageo"
+                                                                        class="img-fluid"></a>
+                            <div class="ftco-media-details">
+                                <h3>FILM.</h3>
+                                <p>Action, Horror</p>
+                                <strong></strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-5 mb-lg-5 ">
+                    <div class="ftco-media-1">
+                        <div class="ftco-media-1-inner">
+                            <a href="" class="d-inline-block mb-4"><img src="images/tomcruise.jpg"
+                                                                        alt="FImageo"
+                                                                        class="img-fluid"></a>
+                            <div class="ftco-media-details">
+                                <h3>FILM.</h3>
+                                <p>Action, Horror</p>
+                                <strong></strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-5 mb-lg-5 ">
+                    <div class="ftco-media-1">
+                        <div class="ftco-media-1-inner">
+                            <a href="" class="d-inline-block mb-4"><img src="images/tomcruise.jpg"
+                                                                        alt="FImageo"
+                                                                        class="img-fluid"></a>
+                            <div class="ftco-media-details">
+                                <h3>FILM.</h3>
+                                <p>Action, Horror</p>
+                                <strong></strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h1 style="text-align: center; color: #333333">UPCOMING</h1>
+        <br>
         <div class="container">
             <div class="row large-gutters">
                 <div class="col-md-6 col-lg-4 mb-5 mb-lg-5 ">
@@ -168,11 +203,11 @@
             <div class="row" align="right">
                 <div class="col-md-8">
                     <div class="row">
-                        <div class="col-md-5">
-                            <h2 class="footer-heading mb-4">About Us</h2>
+                        <div class="col-md-5" >
+                            <h2 class="footer-heading mb-4" >About Us</h2>
                             <p>This is about us</p>
                         </div>
-                        <div class="col-md-3 mx-auto">
+                        <div class="col-md-3 mx-auto" >
                             <h2 class="footer-heading mb-4">Quick Links</h2>
                             <ul class="list-unstyled">
                                 <li><a href="#">Link</a></li>
@@ -195,18 +230,15 @@
                 </div>
             </div>
         </div>
-        <div class="row pt-5 mt-5 text-center">
-            <div class="col-md-12">
+        <div class="row pt-5 mt-5 text-center" style="height: 50px">
+            <div class="col-md-12 text-center">
                 <div class="border-top pt-5">
                     <p class="copyright">
-                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                         Copyright &copy;<script>document.write(new Date().getFullYear());</script>
                         All rights reserved
-                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                     </p>
                 </div>
             </div>
-
         </div>
 </div>
 </footer>

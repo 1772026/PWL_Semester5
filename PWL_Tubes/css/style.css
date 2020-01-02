@@ -29,6 +29,11 @@ h1, h2, h3, h4, h5,
   font-weight: 300 !important;
   text-transform: uppercase; }
 
+.header01
+{
+  text-align: center;
+}
+
 .border-2 {
   border-width: 2px; }
 
@@ -126,7 +131,8 @@ h1, h2, h3, h4, h5,
 
 .site-footer {
   padding: 4em 0;
-  background: #333333; }
+  background: #333333;
+}
   @media (min-width: 768px) {
     .site-footer {
       padding: 8em 0; } }
@@ -1894,3 +1900,4 @@ h1, h2, h3, h4, h5,
     @media (max-width: 991.98px) {
       .first-step:after, .second-step:after {
         display: none; } }
+
