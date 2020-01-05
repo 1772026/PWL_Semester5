@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class transaksi_has_history_detail extends Model
 {
+    public $timestamps = false;
     public function transaksis()
     {
         return $this->belongsTo(transaksi::class);

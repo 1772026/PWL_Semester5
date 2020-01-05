@@ -2,12 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22e971ed-9ac5-4849-bc8b-eafca1d328d7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Webcontroller.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/role.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/dao/daoRole.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/daoRole.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/user.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/city.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/city.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/film.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/film.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/film_has_genre.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/film_has_genre.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/genre.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/genre.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/history_detail.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/history_detail.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/jadwal.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/jadwal.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/location.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/location.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/role.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/role.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/studio.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/studio.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/ticket.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/ticket.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/tipe_transaksi.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/tipe_transaksi.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/transaksi.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/transaksi.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/transaksi_has_history_detail.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/transaksi_has_history_detail.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/user.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/user.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../dbBioskop_V2.mwb" beforeDir="false" afterPath="$PROJECT_DIR$/../dbBioskop_V2.mwb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../dbBioskop_V2.mwb.bak" beforeDir="false" afterPath="$PROJECT_DIR$/../dbBioskop_V2.mwb.bak" afterDir="false" />
     </list>
@@ -122,8 +135,13 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Http/Controllers/Dao" />
     <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Ste-PC\Desktop\PWL_Semester5\Tugas_Besar_PWL\app\Http\Controllers\Dao" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -153,7 +171,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1578205586896</updated>
-      <workItem from="1578205588054" duration="6938000" />
+      <workItem from="1578205588054" duration="11729000" />
     </task>
     <servers />
   </component>

@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class ticket extends Model
 {
+    public $timestamps = false;
     public function transaksis()
     {
         return $this->belongsTo(transaksi::class);
