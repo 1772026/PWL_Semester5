@@ -33,11 +33,11 @@
         <div class="site-mobile-menu-body"></div>
     </div>
 
-
     <header class="site-navbar py-4 js-sticky-header site-navbar-target" role="banner">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-6 col-xl-2 text-center">
+<!--                    <img src="images/logoCinema.png" class="img-thumbnail" href="index.php" class="mb-0">-->
                     <h1 class="mb-0 site-logo m-0 p-0"><a href="index.php" class="mb-0">CINEMONCE</a></h1>
                 </div>
 
