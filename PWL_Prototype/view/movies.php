@@ -71,7 +71,7 @@
                         <input type="password" name="password" class="password form-control"
                                placeholder="Password" style="border-color: lightgrey; opacity: 1"/>
                         <h6 style=""><a href=""> Forgot Password?</a> </h6>
-                        <h6 style="color: black"> Not a member? <a href="">Sign Up.</a> </h6>
+                        <h6 style="color: black"> Not a member? <a href="signUp.php">Sign Up.</a> </h6>
                         <input class="btn login btn-primary" type="submit" value="Login"/>
                     </form>
                 </div>

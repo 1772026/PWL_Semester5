@@ -18,6 +18,15 @@
     <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/form.css">
+    <style>
+        th {
+            text-align: right;
+        }
+        td
+        {
+            text-align: left;
+        }
+    </style>
 </head>
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 
@@ -33,7 +42,8 @@
     </div>
 
 
-    <header class="site-navbar py-4 js-sticky-header site-navbar-target" role="banner"">
+    <header class="site-navbar py-4 js-sticky-header site-navbar-target" role="banner"
+    ">
     <div class="container">
         <div class="row align-items-center">
             <div class="col-6 col-xl-2 text-center">
@@ -54,7 +64,7 @@
 
             <div class="col-6 d-inline-block d-xl-none ml-md-0 py-3"><a href="#"
                                                                         class="site-menu-toggle js-menu-toggle text-white float-right"><span
-                            class="icon-menu h3"></span></a></div>
+                        class="icon-menu h3"></span></a></div>
         </div>
     </div>
     </header>
@@ -70,94 +80,97 @@
                                placeholder="Username" style="border-color: lightgrey; opacity: 1"/>
                         <input type="password" name="password" class="password form-control"
                                placeholder="Password" style="border-color: lightgrey; opacity: 1"/>
-                        <h6 style=""><a href=""> Forgot Password?</a> </h6>
-                        <h6 style="color: black"> Not a member? <a href="signUp.php">Sign Up.</a> </h6>
+                        <h6 style=""><a href=""> Forgot Password?</a></h6>
+                        <h6 style="color: black"> Not a member? <a href="signUp.php">Sign Up.</a></h6>
                         <input class="btn login btn-primary" type="submit" value="Login"/>
                     </form>
                 </div>
             </div>
         </div>
     </div>
+
     <div style="background-color: black;top: 0;height: 90px"></div>
     <div class="site-section" id="properties-section">
-        <h1 style="text-align: center; color: #333333;">FIND THEATERS</h1>
-        <br>
-        <div class="dropdown justify-content-center">
-            <button class="btn btn-primary dropdown-toggle bg-white text-black"
-                    style="width: 75%; border-color: black;" type="button" data-toggle="dropdown">Dropdown Example
-                <span class="caret"></span></button>
-            <ul class="dropdown-menu" style="width: 75%">
-                <li><a href="#" style="color: black">HTML</a></li>
-                <li><a href="#" style="color: black">CSS</a></li>
-                <li><a href="#" style="color: black">JavaScript</a></li>
-            </ul>
-        </div>
-        <div class="dropdown justify-content-center">
-            <button class="btn btn-primary dropdown-toggle bg-white text-black"
-                    style="width: 75%; border-color: black;" type="button" data-toggle="dropdown">Dropdown Example
-                <span class="caret"></span></button>
-            <ul class="dropdown-menu" style="width: 75%">
-                <li><a href="#" style="color: black">HTML</a></li>
-                <li><a href="#" style="color: black">CSS</a></li>
-                <li><a href="#" style="color: black">JavaScript</a></li>
-            </ul>
-        </div>
-        <div class="dropdown justify-content-center">
-            <button class="btn btn-primary dropdown-toggle bg-white text-black"
-                    style="width: 75%; border-color: black;" type="button" data-toggle="dropdown">Dropdown Example
-                <span class="caret"></span></button>
-            <ul class="dropdown-menu" style="width: 75%">
-                <li><a href="#" style="color: black">HTML</a></li>
-                <li><a href="#" style="color: black">CSS</a></li>
-                <li><a href="#" style="color: black">JavaScript</a></li>
-            </ul>
+        <div class="container align-content-center">
+            <div class="row">
+                <div class="col">
+                    <h2 class="section-title text-black">CREATE NEW ACCOUNT</h2>
+                    <table class="table text-black mt-4 text-center" cellspacing="5"
+                           cellpadding="5">
+                        <tbody>
+                        <tr>
+                            <th>Full Name</th>
+                            <td><input type="text" class="" id="inputName" name="name" value="" autocomplete="off"></td>
+                        </tr>
+                        <tr>
+                            <th>Username</th>
+                            <td><input type="text" id="inputUsername" name="username" value="" autocomplete="off"></td>
+                        </tr>
+                        <tr>
+                            <th>Password</th>
+                            <td><input type="password" id="inputPassword" name="password" value="" autocomplete="off"></td>
+                        </tr>
+                        <tr>
+                            <th>Re-type Password</th>
+                            <td><input type="password" id="inputPassword" name="password" value="" autocomplete="off"></td>
+                        </tr>
+                        <tr>
+                            <th>&nbsp;</th>
+                            <td><input type="button" class="btn btn-primary" id="buttonSignUp" name="signUpButton" value="Create Account"></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
         </div>
     </div>
-
-
-    <footer class="site-footer" style="background-color: rgb(20,20,20); bottom: 0; width: 100%; margin-top: 10%">
-        <div class="container" align="center">
-            <div class="row" align="center" style="height: 7vw">
-                <div class="col-md-8">
-                    <div class="row">
-                        <div class="col-md-5">
-                            <h2 class="footer-heading mb-4">About Us</h2>
-                            <p>This is about us</p>
-                        </div>
-                        <div class="col-md-3 mx-auto">
-                            <h2 class="footer-heading mb-4">Links</h2>
-                            <ul class="list-unstyled">
-                                <li><a href="#">Link</a></li>
-                                <li><a href="#">Link</a></li>
-                                <li><a href="#">Link</a></li>
-                                <li><a href="#">Link</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="mb-4">
-                        <div class="">
-                            <h2 class="footer-heading mb-4">Follow Us</h2>
-                            <a href="#" class="pl-0 pr-3"><span class="icon-facebook"></span></a>
-                            <a href="#" class="pl-3 pr-3"><span class="icon-twitter"></span></a>
-                            <a href="#" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row pt-5 mt-5 mr-5 text-center" align="center" style="height: 6vw; align-items: center;">
-            <div class="col-md-12 text-center">
-                <div class="border-top pt-5 p-4">
-                    <p class="copyright">
-                        Copyright &copy;<script>document.write(new Date().getFullYear());</script>
-                        All rights reserved
-                    </p>
-                </div>
-            </div>
-        </div>
 </div>
+
+
+<footer class="site-footer" style="background-color: rgb(20,20,20); bottom: 0; width: 100%;">
+    <div class="container" align="center">
+        <div class="row" align="center" style="height: 7vw">
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="col-md-5">
+                        <h2 class="footer-heading mb-4">About Us</h2>
+                        <p>This is about us</p>
+                    </div>
+                    <div class="col-md-3 mx-auto">
+                        <h2 class="footer-heading mb-4">Links</h2>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Link</a></li>
+                            <li><a href="#">Link</a></li>
+                            <li><a href="#">Link</a></li>
+                            <li><a href="#">Link</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="mb-4">
+                    <div class="">
+                        <h2 class="footer-heading mb-4">Follow Us</h2>
+                        <a href="#" class="pl-0 pr-3"><span class="icon-facebook"></span></a>
+                        <a href="#" class="pl-3 pr-3"><span class="icon-twitter"></span></a>
+                        <a href="#" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row pt-5 mt-5 mr-5 text-center" align="center" style="height: 6vw; align-items: center;">
+        <div class="col-md-12 text-center">
+            <div class="border-top pt-5 p-4">
+                <p class="copyright">
+                    Copyright &copy;<script>document.write(new Date().getFullYear());</script>
+                    All rights reserved
+                </p>
+            </div>
+        </div>
+    </div>
+    </div>
 </footer>
 </div> <!-- .site-wrap -->
 

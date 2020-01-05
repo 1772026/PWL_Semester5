@@ -54,7 +54,7 @@
 
             <div class="col-6 d-inline-block d-xl-none ml-md-0 py-3"><a href="#"
                                                                         class="site-menu-toggle js-menu-toggle text-white float-right"><span
-                            class="icon-menu h3"></span></a></div>
+                        class="icon-menu h3"></span></a></div>
         </div>
     </div>
     </header>
@@ -79,38 +79,21 @@
         </div>
     </div>
     <div style="background-color: black;top: 0;height: 90px"></div>
+
     <div class="site-section" id="properties-section">
-        <h1 style="text-align: center; color: #333333;">FIND THEATERS</h1>
+
+        <h1 style="text-align: center; color: #333333;">FORGOT PASSWORD</h1>
         <br>
-        <div class="dropdown justify-content-center">
-            <button class="btn btn-primary dropdown-toggle bg-white text-black"
-                    style="width: 75%; border-color: black;" type="button" data-toggle="dropdown">Dropdown Example
-                <span class="caret"></span></button>
-            <ul class="dropdown-menu" style="width: 75%">
-                <li><a href="#" style="color: black">HTML</a></li>
-                <li><a href="#" style="color: black">CSS</a></li>
-                <li><a href="#" style="color: black">JavaScript</a></li>
-            </ul>
+        <div class="row">
+
+            <br>
+            <table class="w-25" align="center">
+                <tr><td><a style="color: #333333">Please input your e-mail so we can help you.</a></td></tr>
+                <tr><td><input type="text" name="email" class="form-control" placeholder="E-mail" style="border-color: lightgrey; opacity: 1; border-style: solid"/></td></tr>
+                <tr><td><a href="#" target="_blank" class="btn btn-primary px-4 py-2">Send E-mail</a></td></tr>
+            </table>
         </div>
-        <div class="dropdown justify-content-center">
-            <button class="btn btn-primary dropdown-toggle bg-white text-black"
-                    style="width: 75%; border-color: black;" type="button" data-toggle="dropdown">Dropdown Example
-                <span class="caret"></span></button>
-            <ul class="dropdown-menu" style="width: 75%">
-                <li><a href="#" style="color: black">HTML</a></li>
-                <li><a href="#" style="color: black">CSS</a></li>
-                <li><a href="#" style="color: black">JavaScript</a></li>
-            </ul>
-        </div>
-        <div class="dropdown justify-content-center">
-            <button class="btn btn-primary dropdown-toggle bg-white text-black"
-                    style="width: 75%; border-color: black;" type="button" data-toggle="dropdown">Dropdown Example
-                <span class="caret"></span></button>
-            <ul class="dropdown-menu" style="width: 75%">
-                <li><a href="#" style="color: black">HTML</a></li>
-                <li><a href="#" style="color: black">CSS</a></li>
-                <li><a href="#" style="color: black">JavaScript</a></li>
-            </ul>
+
         </div>
     </div>
 

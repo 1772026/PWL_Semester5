@@ -28,11 +28,11 @@
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\PWL_Prototype\view" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\PWL_Prototype" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\PWL_Prototype\view" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -61,7 +61,7 @@
       <workItem from="1578036539612" duration="3744000" />
       <workItem from="1578051614503" duration="1055000" />
       <workItem from="1578111645608" duration="20206000" />
-      <workItem from="1578188960263" duration="6604000" />
+      <workItem from="1578188960263" duration="19225000" />
     </task>
     <servers />
   </component>
