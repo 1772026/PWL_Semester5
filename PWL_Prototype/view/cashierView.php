@@ -32,13 +32,10 @@
             //     seatTaken -= 1;
             // }
 
-            if(thisSquare.getAttribute("srcOff"))
-            {
+            if (thisSquare.getAttribute("srcOff")) {
                 thisSquare.setAttribute("src", thisSquare.getAttribute("srcOn"));
                 seatTaken += 1;
-            }
-            else if(thisSquare.getAttribute("srcOn"))
-            {
+            } else if (thisSquare.getAttribute("srcOn")) {
                 thisSquare.setAttribute("src", thisSquare.getAttribute("srcOff"));
                 seatTaken -= 1;
             }
@@ -120,6 +117,28 @@
         <div class="container " style="border: 1px">
             <h1 class="text-black">CASHIER MODE</h1>
             <br>
+            <div class="row justify-content-center">
+            <div class="dropdown show mx-2">
+                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMovie" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    SELECT MOVIE
+                </a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item" href="#">Movie1</a>
+                    <a class="dropdown-item" href="#">Movie2</a>
+                    <a class="dropdown-item" href="#">Movie3</a>
+                </div>
+            </div>
+            <div class="dropdown show">
+                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMovie" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    SELECT STUDIO
+                </a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item" href="#">Studio1</a>
+                    <a class="dropdown-item" href="#">Studio2</a>
+                    <a class="dropdown-item" href="#">Studio3</a>
+                </div>
+            </div>
+            </div>
             <table class="mt-4" align="center" cellspacing="0" cellpadding="0" border="0">
                 <tbody>
                 <tr>
@@ -1226,7 +1245,8 @@
                             <h2 class="footer-heading mb-4">Follow Us</h2>
                             <a href="https://www.facebook.com" class="pl-0 pr-3"><span class="icon-facebook"></span></a>
                             <a href="https://www.twitter.com" class="pl-3 pr-3"><span class="icon-twitter"></span></a>
-                            <a href="https://www.instagram.com" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
+                            <a href="https://www.instagram.com" class="pl-3 pr-3"><span
+                                        class="icon-instagram"></span></a>
                         </div>
                     </div>
                 </div>
