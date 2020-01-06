@@ -11,7 +11,12 @@
 |
 */
 
+use Illuminate\Support\Facades\Route;
+
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/role', 'WebController@index');
+//Route::get('/role', 'WebController@index');
+Route::get('/film', 'Webcontroller@index');
+Route::get('/forget', 'EmailController@forgetPassword');
+Route::get('/ticket', 'EmailController@generateTicket');

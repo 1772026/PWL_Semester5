@@ -11,5 +11,4 @@ class role extends Model
     public function users(){
         return $this->hasMany(user::class);
     }
-    //
 }

@@ -1,20 +1,23 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Dao;
 
 use App\role;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
 class daoRole extends Controller
 {
     public function getAll()
     {
-        return role::all();
+        $test=role::with('users')->get();
+        return response()->json($test, 200);
     }
 
     public function get($id)
     {
-        return role::all()->find($id);
+        $test=role::with('users')->get()->find($id);
+        return response()->json($test, 200);
     }
 
     public function add(Request $request)
