@@ -70,7 +70,7 @@
                                placeholder="Username" style="border-color: lightgrey; opacity: 1"/>
                         <input type="password" name="password" class="password form-control"
                                placeholder="Password" style="border-color: lightgrey; opacity: 1"/>
-                        <h6 style=""><a href=""> Forgot Password?</a> </h6>
+                        <h6 style=""><a href="forgotPassword.php"> Forgot Password?</a> </h6>
                         <h6 style="color: black"> Not a member? <a href="signUp.php">Sign Up.</a> </h6>
                         <input class="btn login btn-primary" type="submit" value="Login"/>
                     </form>
@@ -122,15 +122,17 @@
                     <div class="row">
                         <div class="col-md-5">
                             <h2 class="footer-heading mb-4">About Us</h2>
-                            <p>This is about us</p>
+                            <p>Joshua Suherlan (1772013)</p>
+                            <p>Steven Rumanto (1772026)</p>
+                            <p>Kelvin Susanto (1772039)</p>
                         </div>
                         <div class="col-md-3 mx-auto">
                             <h2 class="footer-heading mb-4">Links</h2>
                             <ul class="list-unstyled">
-                                <li><a href="#">Link</a></li>
-                                <li><a href="#">Link</a></li>
-                                <li><a href="#">Link</a></li>
-                                <li><a href="#">Link</a></li>
+                                <li><a href="index.php">Home</a></li>
+                                <li><a href="movies.php">Movies</a></li>
+                                <li><a href="theaters.php">Theaters</a></li>
+                                <li><a href="signUp.php">Sign Up</a></li>
                             </ul>
                         </div>
                     </div>
@@ -139,9 +141,9 @@
                     <div class="mb-4">
                         <div class="">
                             <h2 class="footer-heading mb-4">Follow Us</h2>
-                            <a href="#" class="pl-0 pr-3"><span class="icon-facebook"></span></a>
-                            <a href="#" class="pl-3 pr-3"><span class="icon-twitter"></span></a>
-                            <a href="#" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
+                            <a href="https://www.facebook.com" class="pl-0 pr-3"><span class="icon-facebook"></span></a>
+                            <a href="https://www.twitter.com" class="pl-3 pr-3"><span class="icon-twitter"></span></a>
+                            <a href="https://www.instagram.com" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
                         </div>
                     </div>
                 </div>

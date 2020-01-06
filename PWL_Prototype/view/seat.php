@@ -21,17 +21,32 @@
 
 
     <script language="javascript">
+        var total_seat = document.getElementsByName("totalTickets").values();
         var prevSquare = null;
         var seatTaken = 0;
+
         function SelectSeat(thisSquare) {
-            if (prevSquare && prevSquare != thisSquare) {
-                // Alter prevSquare image (if prevSquare is an <img> element)
-                prevSquare.setAttribute("src", prevSquare.getAttribute("srcOff"));
+            // if (prevSquare && prevSquare != thisSquare) {
+            //     // Alter prevSquare image (if prevSquare is an <img> element)
+            //     prevSquare.setAttribute("src", prevSquare.getAttribute("srcOff"));
+            //     seatTaken -= 1;
+            // }
+
+            if(thisSquare.getAttribute("srcOff"))
+            {
+                thisSquare.setAttribute("src", thisSquare.getAttribute("srcOn"));
+                seatTaken += 1;
+            }
+            else if(thisSquare.getAttribute("srcOn"))
+            {
+                thisSquare.setAttribute("src", thisSquare.getAttribute("srcOff"));
+                seatTaken -= 1;
             }
 
             // Alter thisSquare to your active image
-            thisSquare.setAttribute("src", thisSquare.getAttribute("srcOn"));
-            seatTaken = seatTaken + 1;
+            // thisSquare.setAttribute("src", thisSquare.getAttribute("srcOn"));
+            // seatTaken += 1;
+            document.getElementById("seatTaken").innerHTML = seatTaken;
             prevSquare = thisSquare;
         }
     </script>
@@ -89,7 +104,7 @@
                                placeholder="Username" style="border-color: lightgrey; opacity: 1"/>
                         <input type="password" name="password" class="password form-control"
                                placeholder="Password" style="border-color: lightgrey; opacity: 1"/>
-                        <h6 style=""><a href=""> Forgot Password?</a></h6>
+                        <h6 style=""><a href="forgotPassword.php"> Forgot Password?</a></h6>
                         <h6 style="color: black"> Not a member? <a href="signUp.php">Sign Up.</a></h6>
                         <input class="btn login btn-primary" type="submit" value="Login"/>
                     </form>
@@ -103,7 +118,9 @@
     <!--    HERE    -->
     <div class="site-section pr-5" id="properties-section" align="center">
         <div class="container " style="border: 1px">
-            <table align="center" cellspacing="0" cellpadding="0" border="0">
+            <h1 class="text-black">SELECT SEATS</h1>
+            <br>
+            <table class="mt-4" align="center" cellspacing="0" cellpadding="0" border="0">
                 <tbody>
                 <tr>
                     <th width="25" valign="middle" align="center"><a href="#" name="seats" id="link_A1"
@@ -1175,25 +1192,30 @@
                 </tr>
                 </tbody>
             </table>
+            <br>
+            <h3 class="text-black">Seat Taken <h3 id="seatTaken">0</h3></h3>
+            <input type="button" class="btn btn-primary" id="buttonConfirm" name="confirmButton" value="Confirm">
         </div>
     </div>
 
-    <footer class="site-footer" style="background-color: rgb(20,20,20); bottom: 0; width: 100%;">
+    <footer class="site-footer" style="background-color: rgb(20,20,20); bottom: 0; width: 100%; margin-top: 10%">
         <div class="container" align="center">
             <div class="row" align="center" style="height: 7vw">
                 <div class="col-md-8">
                     <div class="row">
                         <div class="col-md-5">
                             <h2 class="footer-heading mb-4">About Us</h2>
-                            <p>This is about us</p>
+                            <p>Joshua Suherlan (1772013)</p>
+                            <p>Steven Rumanto (1772026)</p>
+                            <p>Kelvin Susanto (1772039)</p>
                         </div>
                         <div class="col-md-3 mx-auto">
                             <h2 class="footer-heading mb-4">Links</h2>
                             <ul class="list-unstyled">
-                                <li><a href="#">Link</a></li>
-                                <li><a href="#">Link</a></li>
-                                <li><a href="#">Link</a></li>
-                                <li><a href="#">Link</a></li>
+                                <li><a href="index.php">Home</a></li>
+                                <li><a href="movies.php">Movies</a></li>
+                                <li><a href="theaters.php">Theaters</a></li>
+                                <li><a href="signUp.php">Sign Up</a></li>
                             </ul>
                         </div>
                     </div>
@@ -1202,9 +1224,9 @@
                     <div class="mb-4">
                         <div class="">
                             <h2 class="footer-heading mb-4">Follow Us</h2>
-                            <a href="#" class="pl-0 pr-3"><span class="icon-facebook"></span></a>
-                            <a href="#" class="pl-3 pr-3"><span class="icon-twitter"></span></a>
-                            <a href="#" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
+                            <a href="https://www.facebook.com" class="pl-0 pr-3"><span class="icon-facebook"></span></a>
+                            <a href="https://www.twitter.com" class="pl-3 pr-3"><span class="icon-twitter"></span></a>
+                            <a href="https://www.instagram.com" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
                         </div>
                     </div>
                 </div>
@@ -1222,7 +1244,6 @@
         </div>
 </div>
 </footer>
-
 </div> <!-- .site-wrap -->
 
 <a href="#top" class="gototop"><span class="icon-angle-double-up"></span></a>
