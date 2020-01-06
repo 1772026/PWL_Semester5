@@ -18,15 +18,39 @@
     <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/form.css">
-    <style>
-        th {
-            text-align: right;
+
+
+    <script language="javascript">
+        var total_seat = document.getElementsByName("totalTickets").values();
+        var prevSquare = null;
+        var seatTaken = 0;
+
+        function SelectSeat(thisSquare) {
+            // if (prevSquare && prevSquare != thisSquare) {
+            //     // Alter prevSquare image (if prevSquare is an <img> element)
+            //     prevSquare.setAttribute("src", prevSquare.getAttribute("srcOff"));
+            //     seatTaken -= 1;
+            // }
+
+            if(thisSquare.getAttribute("srcOff"))
+            {
+                thisSquare.setAttribute("src", thisSquare.getAttribute("srcOn"));
+                seatTaken += 1;
+            }
+            else if(thisSquare.getAttribute("srcOn"))
+            {
+                thisSquare.setAttribute("src", thisSquare.getAttribute("srcOff"));
+                seatTaken -= 1;
+            }
+
+            // Alter thisSquare to your active image
+            // thisSquare.setAttribute("src", thisSquare.getAttribute("srcOn"));
+            // seatTaken += 1;
+            document.getElementById("seatTaken").innerHTML = seatTaken;
+            prevSquare = thisSquare;
         }
-        td
-        {
-            text-align: left;
-        }
-    </style>
+    </script>
+
 </head>
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 
@@ -42,30 +66,31 @@
     </div>
 
 
-    <header class="site-navbar py-4 js-sticky-header site-navbar-target" role="banner"">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-6 col-xl-2 text-center">
-                <h1 class="mb-0 site-logo m-0 p-0"><a href="index.php" class="mb-0">CINEMONCE</a></h1>
+    <header class="site-navbar py-4 js-sticky-header site-navbar-target" role="banner"
+            style="background-color: rgb(20,20,20);">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-6 col-xl-2 text-center">
+                    <!--                    <img src="images/logoCinema.png" class="img-thumbnail" href="index.php" class="mb-0">-->
+                    <h1 class="mb-0 site-logo m-0 p-0"><a href="index.php" class="mb-0">CINEMONCE</a></h1>
+                </div>
+
+                <div class="col-12 col-md-10 d-none d-xl-block">
+                    <nav class="site-navigation position-relative text-right" role="navigation">
+
+                        <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
+                            <li><a href="movies.php" class="nav-link">Movies</a></li>
+                            <li><a href="theaters.php" class="nav-link">Theaters</a></li>
+                            <li><a class="nav-link" href="#" data-target="#login" data-toggle="modal">Sign In</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="col-6 d-inline-block d-xl-none ml-md-0 py-3"><a href="#"
+                                                                            class="site-menu-toggle js-menu-toggle text-white float-right"><span
+                                class="icon-menu h3"></span></a></div>
             </div>
-
-            <div class="col-12 col-md-10 d-none d-xl-block">
-                <nav class="site-navigation position-relative text-right" role="navigation">
-
-                    <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
-                        <li><a href="movies.php" class="nav-link">Movies</a></li>
-                        <li><a href="theaters.php" class="nav-link">Theaters</a></li>
-                        <li><a class="nav-link" href="#" data-target="#login" data-toggle="modal">Sign In</a></li>
-
-                    </ul>
-                </nav>
-            </div>
-
-            <div class="col-6 d-inline-block d-xl-none ml-md-0 py-3"><a href="#"
-                                                                        class="site-menu-toggle js-menu-toggle text-white float-right"><span
-                        class="icon-menu h3"></span></a></div>
         </div>
-    </div>
     </header>
 
     <div id="login" class="modal fade" role="dialog">
@@ -79,8 +104,8 @@
                                placeholder="Username" style="border-color: lightgrey; opacity: 1"/>
                         <input type="password" name="password" class="password form-control"
                                placeholder="Password" style="border-color: lightgrey; opacity: 1"/>
-                        <h6 style=""><a href="forgotPassword.php"> Forgot Password?</a> </h6>
-                        <h6 style="color: black"> Not a member? <a href="signUp.php">Sign Up.</a> </h6>
+                        <h6 style=""><a href="forgotPassword.php"> Forgot Password?</a></h6>
+                        <h6 style="color: black"> Not a member? <a href="signUp.php">Sign Up.</a></h6>
                         <input class="btn login btn-primary" type="submit" value="Login"/>
                     </form>
                 </div>
@@ -88,6 +113,9 @@
         </div>
     </div>
     <div style="background-color: black;top: 0;height: 90px"></div>
+
+    <!--    CODE    -->
+    <!--    HERE    -->
     <div class="site-section pr-5" id="properties-section" align="center">
         <div class="container " style="border: 1px">
             <h1 class="text-black">CASHIER MODE</h1>
@@ -1169,8 +1197,6 @@
             <input type="button" class="btn btn-primary" id="buttonConfirm" name="confirmButton" value="Confirm">
         </div>
     </div>
-    </div>
-
 
     <footer class="site-footer" style="background-color: rgb(20,20,20); bottom: 0; width: 100%; margin-top: 10%">
         <div class="container" align="center">
