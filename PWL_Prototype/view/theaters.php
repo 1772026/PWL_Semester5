@@ -84,32 +84,32 @@
         <br>
         <div class="dropdown justify-content-center">
             <button class="btn btn-primary dropdown-toggle bg-white text-black"
-                    style="width: 75%; border-color: black;" type="button" data-toggle="dropdown">Dropdown Example
+                    style="width: 75%; border-color: black;" type="button" data-toggle="dropdown">GEDUNG 1
                 <span class="caret"></span></button>
             <ul class="dropdown-menu" style="width: 75%">
-                <li><a href="#" style="color: black">HTML</a></li>
-                <li><a href="#" style="color: black">CSS</a></li>
-                <li><a href="#" style="color: black">JavaScript</a></li>
+                <li><a href="#" style="color: black">STUDIO 1</a></li>
+                <li><a href="#" style="color: black">STUDIO 2</a></li>
+                <li><a href="#" style="color: black">STUDIO 3</a></li>
             </ul>
         </div>
         <div class="dropdown justify-content-center">
             <button class="btn btn-primary dropdown-toggle bg-white text-black"
-                    style="width: 75%; border-color: black;" type="button" data-toggle="dropdown">Dropdown Example
+                    style="width: 75%; border-color: black;" type="button" data-toggle="dropdown">GEDUNG 2
                 <span class="caret"></span></button>
             <ul class="dropdown-menu" style="width: 75%">
-                <li><a href="#" style="color: black">HTML</a></li>
-                <li><a href="#" style="color: black">CSS</a></li>
-                <li><a href="#" style="color: black">JavaScript</a></li>
+                <li><a href="#" style="color: black">STUDIO 1</a></li>
+                <li><a href="#" style="color: black">STUDIO 2</a></li>
+                <li><a href="#" style="color: black">STUDIO 3</a></li>
             </ul>
         </div>
         <div class="dropdown justify-content-center">
             <button class="btn btn-primary dropdown-toggle bg-white text-black"
-                    style="width: 75%; border-color: black;" type="button" data-toggle="dropdown">Dropdown Example
+                    style="width: 75%; border-color: black;" type="button" data-toggle="dropdown">GEDUNG 3
                 <span class="caret"></span></button>
             <ul class="dropdown-menu" style="width: 75%">
-                <li><a href="#" style="color: black">HTML</a></li>
-                <li><a href="#" style="color: black">CSS</a></li>
-                <li><a href="#" style="color: black">JavaScript</a></li>
+                <li><a href="#" style="color: black">STUDIO 1</a></li>
+                <li><a href="#" style="color: black">STUDIO 2</a></li>
+                <li><a href="#" style="color: black">STUDIO 3</a></li>
             </ul>
         </div>
     </div>

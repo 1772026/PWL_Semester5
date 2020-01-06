@@ -102,9 +102,8 @@
                 <div class="container">
                     <div class="row align-items-center justify-content-center">
                         <div class="col-md-6 mt-lg-5 text-center">
-                            <h1 class="text-shadow">Bla Bla Bla</h1>
-                            <p class="mb-5 text-shadow">BLA BLA BLA BLA</p>
-                            <p><a href="#" target="_blank" class="btn btn-primary px-5 py-3">Get Started</a></p>
+                            <p class="mb-2 text-shadow">CHECK OUT OUR MOVIES SELECTION</p>
+                            <p><a href="#" target="_blank" class="btn btn-primary px-5 py-3">MOVIES</a></p>
 
                         </div>
                     </div>
@@ -121,9 +120,8 @@
                 <div class="container">
                     <div class="row align-items-center justify-content-center">
                         <div class="col-md-6 mt-lg-5 text-center">
-                            <h1 class="text-shadow">Bla Bla Bla</h1>
-                            <p class="mb-5 text-shadow">BLA BLA BLA BLA</p>
-                            <p><a href="#" target="_blank" class="btn btn-primary px-5 py-3">Get Started</a></p>
+                            <p class="mb-2 text-shadow">CHECK OUT OUR MOVIES SELECTION</p>
+                            <p><a href="movies.php" target="_blank" class="btn btn-primary px-5 py-3">MOVIES</a></p>
 
                         </div>
                     </div>
@@ -195,7 +193,7 @@
             <div class="row large-gutters">
                 <div class="col-md-6 col-lg-4 mb-5 mb-lg-5 ">
                     <div class="ftco-media-1">
-                        <div class="ftco-media-1">
+                        <div class="ftco-media-1-inner">
                             <a href="" class="d-inline-block mb-4"><img src="images/tomcruise.jpg"
                                                                         alt="FImageo"
                                                                         class="img-fluid"></a>

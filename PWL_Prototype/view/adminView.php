@@ -184,31 +184,10 @@
                 </div>
                 <div class="collapse mt-2 text-black" id="manageCashiers">
                     <div class="card card-body">
-                        <h3>ADD NEW CASHIER</h3>
+                        <h3>REPORT</h3>
                         <table class="table text-black mt-4 text-center" cellspacing="5"
                                cellpadding="5">
-                            <tbody>
-                            <tr>
-                                <th>Full Name</th>
-                                <td><input type="text" class="" id="inputName" name="name" value="" autocomplete="off"></td>
-                            </tr>
-                            <tr>
-                                <th>Username</th>
-                                <td><input type="text" id="inputUsername" name="username" value="" autocomplete="off"></td>
-                            </tr>
-                            <tr>
-                                <th>Password</th>
-                                <td><input type="password" id="inputPassword" name="password" value="" autocomplete="off"></td>
-                            </tr>
-                            <tr>
-                                <th>Re-type Password</th>
-                                <td><input type="password" id="inputPassword" name="password" value="" autocomplete="off"></td>
-                            </tr>
-                            <tr>
-                                <th>&nbsp;</th>
-                                <td><input type="button" class="btn btn-primary" id="buttonAddCashier" name="btnSubmit" value="Add Cashier"></td>
-                            </tr>
-                            </tbody>
+
                         </table>
                     </div>
                 </div>
