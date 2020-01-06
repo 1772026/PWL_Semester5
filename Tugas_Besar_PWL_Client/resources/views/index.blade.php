@@ -1,10 +1,23 @@
-<!DOCTYPE html>
+<?php
+use \App\Http\Controllers\ViewController\movieController;
+use \App\Http\Controllers\ViewController\indexController;
+use \App\Http\Controllers\ViewController\forgotPasswordController;
+use \App\Http\Controllers\ViewController\movieDetailController;
+use \App\Http\Controllers\ViewController\seatController;
+use \App\Http\Controllers\ViewController\cashierController;
+use \App\Http\Controllers\ViewController\theaterController;
+use \App\Http\Controllers\ViewController\signUpController;
+use \App\Http\Controllers\ViewController\adminController;
+use \App\Http\Controllers\ViewController\homeController;
+//session_destroy();
+//session_start();
+?>
+    <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Tubes PWL</title>
+    <title>Tugas Besar Pemerograman Web Lanjut</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="fonts/icomoon/style.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -18,12 +31,11 @@
     <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/form.css">
-
 </head>
+
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 
 <div class="site-wrap">
-
     <div class="site-mobile-menu site-navbar-target">
         <div class="site-mobile-menu-header">
             <div class="site-mobile-menu-close mt-3">
@@ -36,17 +48,17 @@
     <header class="site-navbar py-4 js-sticky-header site-navbar-target" role="banner">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-6 col-xl-2 text-center">
-                    <!--                    <img src="images/logoCinema.png" class="img-thumbnail" href="index.php" class="mb-0">-->
-                    <h1 class="mb-0 site-logo m-0 p-0"><a href="index.php" class="mb-0">CINEMONCE</a></h1>
+                <div class="col">
+                    <h1 class="mb-0 site-logo m-0 p-0"><a href="?menu=index" class="mb-0">Cinema ONCE</a></h1>
                 </div>
-
-                <div class="col-12 col-md-10 d-none d-xl-block">
+                <div class="col "><img src="images/logoCinema.png" width="100" href="#">
+                </div>
+                <div class="col">
                     <nav class="site-navigation position-relative text-right" role="navigation">
 
                         <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
-                            <li><a href="movies.php" class="nav-link">Movies</a></li>
-                            <li><a href="theaters.php" class="nav-link">Theaters</a></li>
+                            <li><a href="?menu=movie" class="nav-link">Movies</a></li>
+                            <li><a href="?menu=theater" class="nav-link">Theaters</a></li>
                             <li><a class="nav-link" href="#" data-target="#login" data-toggle="modal">Sign In</a></li>
 
                         </ul>
@@ -63,258 +75,53 @@
     <div id="login" class="modal fade" role="dialog">
         <div class="modal-dialog">
             <div class="modal-content">
-                <!--Modal cascading tabs-->
-                <div class="modal-c-tabs">
-
-                    <!-- Nav tabs -->
-                    <ul class="nav nav-tabs md-tabs tabs-2 light-blue darken-3" role="tablist">
-                        <li class="nav-item">
-                            <a class="nav-link active" data-toggle="tab" href="#panel7" role="tab"><i
-                                    class="fas fa-user mr-1"></i>
-                                Login</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-toggle="tab" href="#panel8" role="tab"><i
-                                    class="fas fa-user-plus mr-1"></i>
-                                Register</a>
-                        </li>
-                    </ul>
-
-                    <!-- Tab panels -->
-                    <div class="tab-content">
-                        <!--Panel 7-->
-                        <div class="tab-pane fade in show active" id="panel7" role="tabpanel">
-
-                            <!--Body-->
-                            <div class="modal-body mb-1">
-                                <div class="md-form form-sm mb-5">
-                                    <i class="fas fa-envelope prefix"></i>
-                                    <input type="email" id="modalLRInput10" class="form-control form-control-sm validate">
-                                    <label data-error="wrong" data-success="right" for="modalLRInput10">Your email</label>
-                                </div>
-
-                                <div class="md-form form-sm mb-4">
-                                    <i class="fas fa-lock prefix"></i>
-                                    <input type="password" id="modalLRInput11"
-                                           class="form-control form-control-sm validate">
-                                    <label data-error="wrong" data-success="right" for="modalLRInput11">Your
-                                        password</label>
-                                </div>
-                                <div class="text-center mt-2">
-                                    <button class="btn btn-info">Log in <i class="fas fa-sign-in ml-1"></i></button>
-                                </div>
-                            </div>
-                            <!--Footer-->
-                            <div class="modal-footer">
-                                <div class="options text-center text-md-right mt-1">
-                                    <p>Not a member? <a href="#" class="blue-text">Sign Up</a></p>
-                                    <p>Forgot <a href="#" class="blue-text">Password?</a></p>
-                                </div>
-                                <button type="button" class="btn btn-outline-info waves-effect ml-auto"
-                                        data-dismiss="modal">Close
-                                </button>
-                            </div>
-
-                        </div>
-                        <!--/.Panel 7-->
-
-                        <!--Panel 8-->
-                        <div class="tab-pane fade" id="panel8" role="tabpanel">
-
-                            <!--Body-->
-                            <div class="modal-body">
-                                <div class="md-form form-sm mb-5">
-                                    <i class="fas fa-envelope prefix"></i>
-                                    <input type="email" id="modalLRInput12" class="form-control form-control-sm validate">
-                                    <label data-error="wrong" data-success="right" for="modalLRInput12">Your email</label>
-                                </div>
-
-                                <div class="md-form form-sm mb-5">
-                                    <i class="fas fa-lock prefix"></i>
-                                    <input type="password" id="modalLRInput13"
-                                           class="form-control form-control-sm validate">
-                                    <label data-error="wrong" data-success="right" for="modalLRInput13">Your
-                                        password</label>
-                                </div>
-
-                                <div class="md-form form-sm mb-4">
-                                    <i class="fas fa-lock prefix"></i>
-                                    <input type="password" id="modalLRInput14"
-                                           class="form-control form-control-sm validate">
-                                    <label data-error="wrong" data-success="right" for="modalLRInput14">Repeat
-                                        password</label>
-                                </div>
-
-                                <div class="text-center form-sm mt-2">
-                                    <button class="btn btn-info">Sign up <i class="fas fa-sign-in ml-1"></i></button>
-                                </div>
-
-                            </div>
-                            <!--Footer-->
-                            <div class="modal-footer">
-                                <div class="options text-right">
-                                    <p class="pt-1">Already have an account? <a href="#" class="blue-text">Log In</a></p>
-                                </div>
-                                <button type="button" class="btn btn-outline-info waves-effect ml-auto"
-                                        data-dismiss="modal">Close
-                                </button>
-                            </div>
-                        </div>
-                        <!--/.Panel 8-->
-                    </div>
-
+                <div class="modal-body bg-white">
+                    <button data-dismiss="modal" class="close text-black">&times;</button>
+                    <h4 style="color: black">Login</h4>
+                    <form>
+                        <input type="text" name="username" class="username form-control"
+                               placeholder="Username" style="border-color: lightgrey; opacity: 1"/>
+                        <input type="password" name="password" class="password form-control"
+                               placeholder="Password" style="border-color: lightgrey; opacity: 1"/>
+                        <h6 style=""><a href="?menu=forgotpassword"> Forgot Password?</a></h6>
+                        <h6 style="color: black"> Not a member? <a href="?menu=signup">Sign Up.</a></h6>
+                        <input class="btn login btn-primary" type="submit" value="Login"/>
+                    </form>
                 </div>
             </div>
         </div>
     </div>
+    {{--BODY--}}
 
-
-
-    <div class="site-block-wrap">
-        <div class="owl-carousel with-dots">
-            <div class="site-blocks-cover overlay overlay-2" style="background-image: url(images/ice-by-cgr.jpg);"
-                 data-aos="fade" id="home-section">
-
-
-                <div class="container">
-                    <div class="row align-items-center justify-content-center">
-                        <div class="col-md-6 mt-lg-5 text-center">
-                            <h1 class="text-shadow">Bla Bla Bla</h1>
-                            <p class="mb-5 text-shadow">BLA BLA BLA BLA</p>
-                            <p><a href="#" target="_blank" class="btn btn-primary px-5 py-3">Get Started</a></p>
-
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
-
-            <div class="site-blocks-cover overlay overlay-2"
-                 style="background-image: url(images/PNEK2UTRMQI6PDAXKM6FFMXQCQ.jpg);" data-aos="fade"
-                 id="home-section">
-
-
-                <div class="container">
-                    <div class="row align-items-center justify-content-center">
-                        <div class="col-md-6 mt-lg-5 text-center">
-                            <h1 class="text-shadow">Bla Bla Bla</h1>
-                            <p class="mb-5 text-shadow">BLA BLA BLA BLA</p>
-                            <p><a href="#" target="_blank" class="btn btn-primary px-5 py-3">Get Started</a></p>
-
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
-        </div>
-
-    </div>
-
-    <div class="site-section" id="properties-section">
-        <!--        NOW SHOWING     -->
-        <!--        MOVIES          -->
-        <h1 style="text-align: center; color: #333333">NOW SHOWING</h1>
-        <br>
-        <div class="container">
-            <div class="row large-gutters">
-                <div class="col-md-6 col-lg-4 mb-5 mb-lg-5 ">
-                    <div class="ftco-media-1">
-                        <div class="ftco-media-1-inner">
-                            <a href="" class="d-inline-block mb-4"><img src="images/tomcruise.jpg"
-                                                                        alt="FImageo"
-                                                                        class="img-fluid"></a>
-                            <div class="ftco-media-details">
-                                <h3>FILM.</h3>
-                                <p>Action, Horror</p>
-                                <strong></strong>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 mb-5 mb-lg-5 ">
-                    <div class="ftco-media-1">
-                        <div class="ftco-media-1-inner">
-                            <a href="" class="d-inline-block mb-4"><img src="images/tomcruise.jpg"
-                                                                        alt="FImageo"
-                                                                        class="img-fluid"></a>
-                            <div class="ftco-media-details">
-                                <h3>FILM.</h3>
-                                <p>Action, Horror</p>
-                                <strong></strong>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 mb-5 mb-lg-5 ">
-                    <div class="ftco-media-1">
-                        <div class="ftco-media-1-inner">
-                            <a href="" class="d-inline-block mb-4"><img src="images/tomcruise.jpg"
-                                                                        alt="FImageo"
-                                                                        class="img-fluid"></a>
-                            <div class="ftco-media-details">
-                                <h3>FILM.</h3>
-                                <p>Action, Horror</p>
-                                <strong></strong>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--        UPCOMING        -->
-        <!--        MOVIES          -->
-        <h1 style="text-align: center; color: #333333">UPCOMING</h1>
-        <br>
-        <div class="container">
-            <div class="row large-gutters">
-                <div class="col-md-6 col-lg-4 mb-5 mb-lg-5 ">
-                    <div class="ftco-media-1">
-                        <div class="ftco-media-1-inner">
-                            <a href="" class="d-inline-block mb-4"><img src="images/tomcruise.jpg"
-                                                                        alt="FImageo"
-                                                                        class="img-fluid"></a>
-                            <div class="ftco-media-details">
-                                <h3>FILM.</h3>
-                                <p>Action, Horror</p>
-                                <strong></strong>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 mb-5 mb-lg-5 ">
-                    <div class="ftco-media-1">
-                        <div class="ftco-media-1-inner">
-                            <a href="" class="d-inline-block mb-4"><img src="images/tomcruise.jpg"
-                                                                        alt="FImageo"
-                                                                        class="img-fluid"></a>
-                            <div class="ftco-media-details">
-                                <h3>FILM.</h3>
-                                <p>Action, Horror</p>
-                                <strong></strong>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 mb-5 mb-lg-5 ">
-                    <div class="ftco-media-1">
-                        <div class="ftco-media-1-inner">
-                            <a href="" class="d-inline-block mb-4"><img src="images/tomcruise.jpg"
-                                                                        alt="FImageo"
-                                                                        class="img-fluid"></a>
-                            <div class="ftco-media-details">
-                                <h3>FILM.</h3>
-                                <p>Action, Horror</p>
-                                <strong></strong>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
+    <?php
+    $target = filter_input(INPUT_GET, 'menu');
+    switch ($target) {
+        case 'movie':
+            $movieController = new movieController();
+            $movieController->index();
+            break;
+        case 'theater':
+            $theaterController = new theaterController();
+            $theaterController->index();
+            break;
+        case 'index':
+            $homeController = new homeController();
+            $homeController->index();
+            break;
+        case 'signup':
+            $signUpController = new signUpController();
+            $signUpController->index();
+            break;
+        case 'forgotpassword':
+            $forgotController = new forgotPasswordController();
+            $forgotController->index();
+            break;
+        default:
+            $homeController = new homeController();
+            $homeController->index();
+    }
+    ?>
+    {{-- END BODY--}}
 
     <footer class="site-footer" style="background-color: rgb(20,20,20); bottom: 0; width: 100%; margin-top: 10%">
         <div class="container" align="center">
@@ -330,10 +137,10 @@
                         <div class="col-md-3 mx-auto">
                             <h2 class="footer-heading mb-4">Links</h2>
                             <ul class="list-unstyled">
-                                <li><a href="index.php">Home</a></li>
-                                <li><a href="movies.php">Movies</a></li>
-                                <li><a href="theaters.php">Theaters</a></li>
-                                <li><a href="signUp.php">Sign Up</a></li>
+                                <li><a href="?menu=default">Home</a></li>
+                                <li><a href="?menu=movie">Movies</a></li>
+                                <li><a href="?menu=theater">Theaters</a></li>
+                                <li><a href="?menu=signup">Sign Up</a></li>
                             </ul>
                         </div>
                     </div>
@@ -344,7 +151,8 @@
                             <h2 class="footer-heading mb-4">Follow Us</h2>
                             <a href="https://www.facebook.com" class="pl-0 pr-3"><span class="icon-facebook"></span></a>
                             <a href="https://www.twitter.com" class="pl-3 pr-3"><span class="icon-twitter"></span></a>
-                            <a href="https://www.instagram.com" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
+                            <a href="https://www.instagram.com" class="pl-3 pr-3"><span
+                                    class="icon-instagram"></span></a>
                         </div>
                     </div>
                 </div>

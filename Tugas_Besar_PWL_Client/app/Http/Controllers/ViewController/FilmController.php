@@ -21,11 +21,11 @@ class FilmController extends Controller
 
 //        $response = $client->get('/api/role');
 //        $response = $client->get('/api/role/2');
-        $response = $client->get('/api/ticket');
+//        $response = $client->get('/api/ticket');
 //        $result = $response->getBody()->getContents();
 //        echo $result;
+
 //        $role = role::all();
 //        return view('role', ['role' => $role]);
-        return view('film');
     }
 }

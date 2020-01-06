@@ -11,7 +11,20 @@
 |
 */
 
+//Route::get('/', function () {
+//    return view('index');
+//});
+Route::get('/film', 'ViewController\filmController@index');
+Route::get('/admin', 'ViewController\adminController@index');
+Route::get('/cashier', 'ViewController\cashierController@index');
+Route::get('/forgetPassword', 'ViewController\forgetPasswordController@index');
+//Route::get('/', 'ViewController\indexController@index');
 Route::get('/', function () {
     return view('index');
 });
-Route::get('/film', 'ViewController\FilmController@index');
+
+Route::get('/movie', 'ViewController\movieController@index');
+Route::get('/movieDetail', 'ViewController\movieDetailController@index');
+Route::get('/seat', 'ViewController\seatController@index');
+Route::get('/signUp', 'ViewController\signUpController@index');
+Route::get('/theater', 'ViewController\theaterController@index');
