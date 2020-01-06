@@ -116,7 +116,7 @@
                         </tr>
                         <tr>
                             <th>&nbsp;</th>
-                            <td><input type="button" class="btn btn-primary" id="buttonSignUp" name="signUpButton" value="Create Account"></td>
+                            <td><input type="button" class="btn btn-primary" id="buttonSignUp" name="btnSubmit" value="Create Account"></td>
                         </tr>
                         </tbody>
                     </table>

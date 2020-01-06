@@ -138,7 +138,7 @@
                             </tr>
                             <tr>
                                 <th>&nbsp;</th>
-                                <td><input type="button" class="btn btn-primary" id="buttonAddMovie" name="addMovieButton" value="Add Movie"></td>
+                                <td><input type="button" class="btn btn-primary" id="buttonAddMovie" name="btnSubmit" value="Add Movie"></td>
                             </tr>
                             </tbody>
                         </table>
@@ -206,7 +206,7 @@
                             </tr>
                             <tr>
                                 <th>&nbsp;</th>
-                                <td><input type="button" class="btn btn-primary" id="buttonAddCashier" name="addCashierButton" value="Add Cashier"></td>
+                                <td><input type="button" class="btn btn-primary" id="buttonAddCashier" name="btnSubmit" value="Add Cashier"></td>
                             </tr>
                             </tbody>
                         </table>

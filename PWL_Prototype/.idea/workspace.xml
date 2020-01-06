@@ -23,16 +23,16 @@
   <component name="ProjectId" id="1VpxwahnAb4t8OER231IUsW1Pen" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../M-Tix, Cinema XXI, Cinema 21, 21 Cineplex.html" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/pw2-assignment07-20191-joshuasuhe-master/pw2-assignment07-20191-joshuasuhe-master" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\PWL_Prototype" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\PWL_Prototype\view" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\PWL_Prototype" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -62,7 +62,9 @@
       <workItem from="1578051614503" duration="1055000" />
       <workItem from="1578111645608" duration="20206000" />
       <workItem from="1578188960263" duration="19589000" />
-      <workItem from="1578275189932" duration="7631000" />
+      <workItem from="1578275189932" duration="9094000" />
+      <workItem from="1578313686035" duration="91000" />
+      <workItem from="1578313779172" duration="7102000" />
     </task>
     <servers />
   </component>
