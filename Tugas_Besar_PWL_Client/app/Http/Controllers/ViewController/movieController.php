@@ -10,7 +10,6 @@ class movieController extends Controller
 {
     public function index()
     {
-        $movie=ApiService::
         include_once(resource_path() . '\views\movie.blade.php');
 //        return view('theater');
     }

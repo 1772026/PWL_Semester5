@@ -96,7 +96,7 @@ if (!isset($_SESSION['user_logged'])) {
         </div>
     </div>
     <?php
-    if ($_SESSION['role'] != 'Admin') {
+//    if ($_SESSION['role'] != 'Admin') {
         $target = filter_input(INPUT_GET, 'menu');
         switch ($target) {
             case 'movie':
@@ -123,10 +123,10 @@ if (!isset($_SESSION['user_logged'])) {
                 $homeController = new homeController();
                 $homeController->index();
         }
-    } else {
-        $adminController = new adminController();
-        $adminController->index();
-    }
+//    } else {
+//        $adminController = new adminController();
+//        $adminController->index();
+//    }
     ?>
 
 

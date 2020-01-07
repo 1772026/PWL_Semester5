@@ -11,8 +11,8 @@
                 <div class="row align-items-center justify-content-center">
                     <div class="col-md-6 mt-lg-5 text-center">
                         <h1 class="text-shadow">SEE OUR MOVIES COLLECTION</h1>
-                        <p class="mb-5 text-shadow">SEE OUR MOVIES COLLECTION</p>
-                        <p><a href="#" target="_blank" class="btn btn-primary px-5 py-3">Get Started</a></p>
+                        <p class="mb-5 text-shadow">OUR MOVIES</p>
+                        <p><a href="#" target="_blank" class="btn btn-primary px-5 py-3">MOVIES</a></p>
 
                     </div>
                 </div>
@@ -30,8 +30,8 @@
                 <div class="row align-items-center justify-content-center">
                     <div class="col-md-6 mt-lg-5 text-center">
                         <h1 class="text-shadow">SEE OUR MOVIES COLLECTION</h1>
-                        <p class="mb-5 text-shadow">SEE OUR MOVIES COLLECTION</p>
-                        <p><a href="#" target="_blank" class="btn btn-primary px-5 py-3">Get Started</a></p>
+                        <p class="mb-5 text-shadow">OUR MOVIES</p>
+                        <p><a href="#" target="_blank" class="btn btn-primary px-5 py-3">MOVIES</a></p>
 
                     </div>
                 </div>
@@ -53,13 +53,7 @@
             <div class="col-md-6 col-lg-4 mb-5 mb-lg-5 ">
                 <div class="ftco-media-1">
                     <div class="ftco-media-1-inner">
-{{--                        <a href="" class="d-inline-block mb-4"><img src="images/tomcruise.jpg"--}}
-{{--                                                                    alt="FImageo"--}}
-{{--                                                                    class="img-fluid"></a>--}}
-{{--                        <div class="ftco-media-details">--}}
-{{--                            <h3>FILM.</h3>--}}
-{{--                            <p>Action, Horror</p>--}}
-{{--                            <strong></strong>--}}
+
                         </div>
                     </div>
                 </div>
@@ -67,13 +61,7 @@
             <div class="col-md-6 col-lg-4 mb-5 mb-lg-5 ">
                 <div class="ftco-media-1">
                     <div class="ftco-media-1-inner">
-                        <a href="" class="d-inline-block mb-4"><img src="images/tomcruise.jpg"
-                                                                    alt="FImageo"
-                                                                    class="img-fluid"></a>
-                        <div class="ftco-media-details">
-                            <h3>FILM.</h3>
-                            <p>Action, Horror</p>
-                            <strong></strong>
+
                         </div>
                     </div>
                 </div>
@@ -81,13 +69,7 @@
             <div class="col-md-6 col-lg-4 mb-5 mb-lg-5 ">
                 <div class="ftco-media-1">
                     <div class="ftco-media-1-inner">
-                        <a href="" class="d-inline-block mb-4"><img src="images/tomcruise.jpg"
-                                                                    alt="FImageo"
-                                                                    class="img-fluid"></a>
-                        <div class="ftco-media-details">
-                            <h3>FILM.</h3>
-                            <p>Action, Horror</p>
-                            <strong></strong>
+
                         </div>
                     </div>
                 </div>
@@ -103,13 +85,7 @@
             <div class="col-md-6 col-lg-4 mb-5 mb-lg-5 ">
                 <div class="ftco-media-1">
                     <div class="ftco-media-1-inner">
-                        <a href="" class="d-inline-block mb-4"><img src="images/tomcruise.jpg"
-                                                                    alt="FImageo"
-                                                                    class="img-fluid"></a>
-                        <div class="ftco-media-details">
-                            <h3>FILM.</h3>
-                            <p>Action, Horror</p>
-                            <strong></strong>
+
                         </div>
                     </div>
                 </div>
@@ -117,13 +93,7 @@
             <div class="col-md-6 col-lg-4 mb-5 mb-lg-5 ">
                 <div class="ftco-media-1">
                     <div class="ftco-media-1-inner">
-                        <a href="" class="d-inline-block mb-4"><img src="images/tomcruise.jpg"
-                                                                    alt="FImageo"
-                                                                    class="img-fluid"></a>
-                        <div class="ftco-media-details">
-                            <h3>FILM.</h3>
-                            <p>Action, Horror</p>
-                            <strong></strong>
+
                         </div>
                     </div>
                 </div>
@@ -131,13 +101,7 @@
             <div class="col-md-6 col-lg-4 mb-5 mb-lg-5 ">
                 <div class="ftco-media-1">
                     <div class="ftco-media-1-inner">
-                        <a href="" class="d-inline-block mb-4"><img src="images/tomcruise.jpg"
-                                                                    alt="FImageo"
-                                                                    class="img-fluid"></a>
-                        <div class="ftco-media-details">
-                            <h3>FILM.</h3>
-                            <p>Action, Horror</p>
-                            <strong></strong>
+
                         </div>
                     </div>
                 </div>
