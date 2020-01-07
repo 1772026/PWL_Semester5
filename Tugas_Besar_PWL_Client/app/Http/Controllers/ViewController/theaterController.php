@@ -9,7 +9,7 @@ use Illuminate\Http\Request;
 class theaterController extends Controller
 {
     public function index(){
-        $location= ApiService::getAll('city');
+       $location=ApiService::getAll('city');
         include_once(resource_path().'\views\theater.blade.php');
     }
 }

@@ -116,5 +116,5 @@ Route::post('genre', 'Dao\daoGenre@add');
 Route::put('/genre/{id}', 'Dao\daoGenre@update');
 Route::delete('/genre/{id}', 'Dao\daoGenre@delete');
 
-Route::get('/forget', 'EmailController@forgetPassword');
-Route::get('/ticket', 'EmailController@generateTicket');
+Route::post('/forget', 'EmailController@forgetPassword');
+Route::post('/ticket', 'EmailController@generateTicket');

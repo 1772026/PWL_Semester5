@@ -13,7 +13,7 @@ class indexController extends Controller
         $username = filter_input(INPUT_POST, "username");
         $password = filter_input(INPUT_POST, "password");
         $roles = ApiService::getAll('role');
-        $data=null;
+        $data = null;
         foreach ($roles as $role) {
             foreach ($role->users as $user) {
                 if ($username === $user->username && $password === $user->password) {
@@ -21,17 +21,34 @@ class indexController extends Controller
                     break;
                 }
             }
-
         }
 //
-        if($data != null){
-            $_SESSION['role']=$role->name;
+        if ($data != null) {
+            $_SESSION['user_logged'] = true;
+            $roleName = $role->name;
         }
         include_once(resource_path() . '\views\index.blade.php');
     }
 
     public function index()
     {
+//        ApiService::getAll('ticket');
+
+//        ApiService::add('ticket', array(
+//            'email' => "sharnandy@gmail.com",
+//            'name' => "Steven Rumanto",
+//            'film' => "Avenger",
+//            'no' => "A1",
+//            'location' => "IP CGV",
+//            'date' => "1 Jan 2020",
+//            'time' => "12:00"
+//        ));
+
+//        ApiService::add('forget', array(
+//            'email' => "sharnandy@gmail.com",
+//            'name' => "Steven Rumanto"
+//        ));
+
 //        ApiService::add('city',array(
 //            'id' => null,
 //            'name' => "test"));

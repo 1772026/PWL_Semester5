@@ -7,19 +7,19 @@
 <table>
     <tr>
         <td>Film :</td>
-        <td>Avanger</td>
+        <td>{{ $film }}</td>
     </tr>
     <tr>
         <td>Studio No :</td>
-        <td>A1</td>
+        <td>{{ $no }}</td>
     </tr>
     <tr>
         <td>Date / Time:</td>
-        <td>01-01-2020 / 20:00</td>
+        <td>{{ $date }} / {{ $time }}</td>
     </tr>
     <tr>
         <td>Location:</td>
-        <td> CGV </td>
+        <td> {{ $location }} </td>
     </tr>
 </table>
 {{--<p>{{$body}}</p>--}}

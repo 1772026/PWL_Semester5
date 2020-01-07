@@ -10,7 +10,7 @@ use \App\Http\Controllers\ViewController\signUpController;
 use \App\Http\Controllers\ViewController\adminController;
 use \App\Http\Controllers\ViewController\homeController;
 //session_destroy();
-session_start();
+
 if (!isset($_SESSION['user_logged'])) {
     $_SESSION['user_logged'] = false;
 }
@@ -96,40 +96,43 @@ if (!isset($_SESSION['user_logged'])) {
         </div>
     </div>
     <?php
-//    if ($_SESSION['role'] != 'Admin') {
-        $target = filter_input(INPUT_GET, 'menu');
-        switch ($target) {
-            case 'movie':
-                $movieController = new movieController();
-                $movieController->index();
-                break;
-            case 'theater':
-                $theaterController = new theaterController();
-                $theaterController->index();
-                break;
-            case 'index':
-                $homeController = new homeController();
-                $homeController->index();
-                break;
-            case 'signup':
-                $signUpController = new signUpController();
-                $signUpController->index();
-                break;
-            case 'forgotpassword':
-                $forgotController = new forgotPasswordController();
-                $forgotController->index();
-                break;
-            default:
-                $homeController = new homeController();
-                $homeController->index();
-        }
-//    } else {
-//        $adminController = new adminController();
-//        $adminController->index();
-//    }
+    //    if ($_SESSION['user_logged']) {
+    //        if ($roleName != 'Admin') {
+    $target = filter_input(INPUT_GET, 'menu');
+    switch ($target) {
+        case 'movie':
+            $movieController = new movieController();
+            $movieController->index();
+            break;
+        case 'theater':
+            $theaterController = new theaterController();
+            $theaterController->index();
+            break;
+        case 'index':
+            $homeController = new homeController();
+            $homeController->index();
+            break;
+        case 'signup':
+            $signUpController = new signUpController();
+            $signUpController->index();
+            break;
+        case 'forgotpassword':
+            $forgotController = new forgotPasswordController();
+            $forgotController->index();
+            break;
+        default:
+            $homeController = new homeController();
+            $homeController->index();
+    }
+    //        } else {
+    //            $adminController = new adminController();
+    //            $adminController->index();
+    //        }
+    //    } else {
+    //        $homeController = new homeController();
+    //        $homeController->index();
+    //    }
     ?>
-
-
     <footer class="site-footer" style="background-color: rgb(20,20,20); bottom: 0; width: 100%; margin-top: 10%">
         <div class="container" align="center">
             <div class="row" align="center" style="height: 7vw">
