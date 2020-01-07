@@ -12,14 +12,12 @@ class seatController extends Controller
     {
         $id = filter_input(INPUT_GET, 'id');
         if (isset($id)) {
+            $films = ApiService::get('film',$id);
+//            $jadwal=array($films->jadwals );
             $studio = ApiService::get('studio', $id);
         }
-//        $submitted = filter_input(INPUT_POST, 'btnSubmit');
-//        if (isset($submitted)) {
-//            $name = filter_input(INPUT_POST, 'txtName');
-//            Utility::curl_post("http://localhost/PWLP08_API/Service/updateInsuranceService.php", array('id' => $id, 'txtName' => $name));
-//            header("Location: index.php?menu=in");
-//        }
-        return view('seat', ['studio' => $studio]);
+        echo $jadwal;
+        include_once(resource_path() . '\views\seat.blade.php');
+//        return view('seat', ['studio' => $studio]);
     }
 }

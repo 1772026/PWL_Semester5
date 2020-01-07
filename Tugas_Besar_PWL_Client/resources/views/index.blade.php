@@ -9,6 +9,7 @@ use \App\Http\Controllers\ViewController\theaterController;
 use \App\Http\Controllers\ViewController\signUpController;
 use \App\Http\Controllers\ViewController\adminController;
 use \App\Http\Controllers\ViewController\homeController;
+use \App\Http\Controllers\ViewController\studioController;
 //session_destroy();
 
 if (!isset($_SESSION['user_logged'])) {
@@ -34,6 +35,7 @@ if (!isset($_SESSION['user_logged'])) {
     <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/movie.css">
 </head>
 
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
@@ -112,6 +114,14 @@ if (!isset($_SESSION['user_logged'])) {
             $homeController = new homeController();
             $homeController->index();
             break;
+        case 'seat':
+            $homeController = new seatController();
+            $homeController->index();
+            break;
+        case 'studio':
+            $homeController = new studioController();
+            $homeController->index();
+            break;
         case 'signup':
             $signUpController = new signUpController();
             $signUpController->index();
@@ -185,6 +195,7 @@ if (!isset($_SESSION['user_logged'])) {
 <a href="#top" class="gototop"><span class="icon-angle-double-up"></span></a>
 
 <script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/movie.js"></script>
 <script src="js/jquery-ui.js"></script>
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
