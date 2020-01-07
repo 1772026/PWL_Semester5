@@ -10,7 +10,10 @@ use \App\Http\Controllers\ViewController\signUpController;
 use \App\Http\Controllers\ViewController\adminController;
 use \App\Http\Controllers\ViewController\homeController;
 //session_destroy();
-//session_start();
+session_start();
+if (!isset($_SESSION['user_logged'])) {
+    $_SESSION['user_logged'] = false;
+}
 ?>
     <!DOCTYPE html>
 <html lang="en">
@@ -78,50 +81,54 @@ use \App\Http\Controllers\ViewController\homeController;
                 <div class="modal-body bg-white">
                     <button data-dismiss="modal" class="close text-black">&times;</button>
                     <h4 style="color: black">Login</h4>
-                    <form>
+                    <form method="post">
                         <input type="text" name="username" class="username form-control"
-                               placeholder="Username" style="border-color: lightgrey; opacity: 1"/>
+                               required placeholder="Username / Email Address"
+                               style="border-color: lightgrey; opacity: 1"/>
                         <input type="password" name="password" class="password form-control"
-                               placeholder="Password" style="border-color: lightgrey; opacity: 1"/>
+                               required placeholder="Password" style="border-color: lightgrey; opacity: 1"/>
                         <h6 style=""><a href="?menu=forgotpassword"> Forgot Password?</a></h6>
                         <h6 style="color: black"> Not a member? <a href="?menu=signup">Sign Up.</a></h6>
-                        <input class="btn login btn-primary" type="submit" value="Login"/>
+                        <input class="btn login btn-primary" name="btnLogin" type="submit" value="Login"/>
                     </form>
                 </div>
             </div>
         </div>
     </div>
-    {{--BODY--}}
-
     <?php
-    $target = filter_input(INPUT_GET, 'menu');
-    switch ($target) {
-        case 'movie':
-            $movieController = new movieController();
-            $movieController->index();
-            break;
-        case 'theater':
-            $theaterController = new theaterController();
-            $theaterController->index();
-            break;
-        case 'index':
-            $homeController = new homeController();
-            $homeController->index();
-            break;
-        case 'signup':
-            $signUpController = new signUpController();
-            $signUpController->index();
-            break;
-        case 'forgotpassword':
-            $forgotController = new forgotPasswordController();
-            $forgotController->index();
-            break;
-        default:
-            $homeController = new homeController();
-            $homeController->index();
+    if ($_SESSION['role'] != 'Admin') {
+        $target = filter_input(INPUT_GET, 'menu');
+        switch ($target) {
+            case 'movie':
+                $movieController = new movieController();
+                $movieController->index();
+                break;
+            case 'theater':
+                $theaterController = new theaterController();
+                $theaterController->index();
+                break;
+            case 'index':
+                $homeController = new homeController();
+                $homeController->index();
+                break;
+            case 'signup':
+                $signUpController = new signUpController();
+                $signUpController->index();
+                break;
+            case 'forgotpassword':
+                $forgotController = new forgotPasswordController();
+                $forgotController->index();
+                break;
+            default:
+                $homeController = new homeController();
+                $homeController->index();
+        }
+    } else {
+        $adminController = new adminController();
+        $adminController->index();
     }
     ?>
-    {{-- END BODY--}}
+
 
     <footer class="site-footer" style="background-color: rgb(20,20,20); bottom: 0; width: 100%; margin-top: 10%">
         <div class="container" align="center">
@@ -168,9 +175,9 @@ use \App\Http\Controllers\ViewController\homeController;
                 </div>
             </div>
         </div>
+    </footer>
 </div>
-</footer>
-</div> <!-- .site-wrap -->
+
 
 <a href="#top" class="gototop"><span class="icon-angle-double-up"></span></a>
 

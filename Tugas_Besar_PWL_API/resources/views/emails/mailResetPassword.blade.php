@@ -1,4 +1,4 @@
 Hello <strong>{{ $name }}</strong>,
 <p>{{$body}}</p>
-<a href="http://localhost:8000/film">Disini</a>
+<a href="http://localhost:8000/">Disini</a>
 </body>

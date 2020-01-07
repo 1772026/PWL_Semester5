@@ -8,12 +8,12 @@ class ApiService
 {
     public static function getAll($class)
     {
-        return ApiConnection::ApiConnect()->get($class)->getBody()->getContents();
+        return json_decode(ApiConnection::ApiConnect()->get($class)->getBody()->getContents());
     }
 
     public static function get($class, $id)
     {
-        return ApiConnection::ApiConnect()->get($class . "/" . $id)->getBody()->getContents();
+        return json_decode(ApiConnection::ApiConnect()->get($class . "/" . $id)->getBody()->getContents());
     }
 
 //    public static function add($class,array $data = array())
@@ -31,9 +31,9 @@ class ApiService
         );
     }
 
-    public static function delete($class,$id)
+    public static function delete($class, $id)
     {
-        ApiConnection::ApiConnect()->delete($class.'/'.$id);
+        ApiConnection::ApiConnect()->delete($class . '/' . $id);
     }
 
 }

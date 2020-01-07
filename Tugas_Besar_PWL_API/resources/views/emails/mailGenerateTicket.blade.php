@@ -7,7 +7,7 @@
 <table>
     <tr>
         <td>Film :</td>
-        <td>SI GANTENG USE GITHUB</td>
+        <td>Avanger</td>
     </tr>
     <tr>
         <td>Studio No :</td>
@@ -15,15 +15,11 @@
     </tr>
     <tr>
         <td>Date / Time:</td>
-        <td>xx-xx-xxxx / xx:xx</td>
-    </tr>
-    <tr>
-        <td>Time:</td>
-        <td>xx:xx</td>
+        <td>01-01-2020 / 20:00</td>
     </tr>
     <tr>
         <td>Location:</td>
-        <td> KELAS CP </td>
+        <td> CGV </td>
     </tr>
 </table>
 {{--<p>{{$body}}</p>--}}

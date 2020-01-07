@@ -12,7 +12,7 @@ class seatController extends Controller
     {
         $id = filter_input(INPUT_GET, 'id');
         if (isset($id)) {
-            $studio = json_decode(ApiService::get('studio', $id));
+            $studio = ApiService::get('studio', $id);
         }
 //        $submitted = filter_input(INPUT_POST, 'btnSubmit');
 //        if (isset($submitted)) {

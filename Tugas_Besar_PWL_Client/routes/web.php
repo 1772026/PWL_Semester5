@@ -18,10 +18,14 @@ Route::get('/film', 'ViewController\filmController@index');
 Route::get('/admin', 'ViewController\adminController@index');
 Route::get('/cashier', 'ViewController\cashierController@index');
 Route::get('/forgetPassword', 'ViewController\forgetPasswordController@index');
+
+Route::get('/', 'ViewController\indexController@index');
+Route::post('/', 'ViewController\indexController@valid');
+
 //Route::get('/', 'ViewController\indexController@index');
-Route::get('/', function () {
-    return view('index');
-});
+//Route::post('/', function () {
+//    return view('index');
+//});
 
 Route::get('/movie', 'ViewController\movieController@index');
 Route::get('/movieDetail', 'ViewController\movieDetailController@index');
