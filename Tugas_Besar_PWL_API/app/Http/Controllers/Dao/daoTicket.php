@@ -12,7 +12,8 @@ class daoTicket extends Controller
 {
     public function getAll()
     {
-        return ticket::all();
+        $data = ticket::with('transaksi','jadwal','location')->get();
+        return response()->json($data,200);
     }
 
     public function get($id)

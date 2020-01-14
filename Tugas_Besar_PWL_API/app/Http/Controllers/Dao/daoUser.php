@@ -11,13 +11,13 @@ class daoUser extends Controller
 {
     public function getAll()
     {
-        $test=user::with('transaksis')->get();
+        $test=user::with('role')->get();
         return response()->json($test, 200);
     }
 
     public function get($id)
     {
-        $test=user::with('transaksis')->get()->find($id);
+        $test=user::with('role')->get()->find($id);
         return response()->json($test, 200);
     }
 

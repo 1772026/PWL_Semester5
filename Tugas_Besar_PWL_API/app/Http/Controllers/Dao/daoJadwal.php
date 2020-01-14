@@ -11,7 +11,7 @@ class daoJadwal extends Controller
 {
     public function getAll()
     {
-        $test=jadwal::with('tickets')->get();
+        $test=jadwal::with('film','studio')->get();
         return response()->json($test, 200);
     }
 

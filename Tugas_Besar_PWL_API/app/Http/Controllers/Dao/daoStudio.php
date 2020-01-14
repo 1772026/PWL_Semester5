@@ -11,13 +11,13 @@ class daoStudio extends Controller
 {
     public function getAll()
     {
-        $test=studio::with('jadwals')->get();
+        $test=studio::all();
         return response()->json($test, 200);
     }
 
     public function get($id)
     {
-        $test=studio::with('jadwals')->get()->find($id);
+        $test=studio::all()->find($id);
         return response()->json($test, 200);
     }
 

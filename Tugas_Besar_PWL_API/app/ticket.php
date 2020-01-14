@@ -7,18 +7,18 @@ use Illuminate\Database\Eloquent\Model;
 class ticket extends Model
 {
     public $timestamps = false;
-    public function transaksis()
+    public function transaksi()
     {
-        return $this->belongsTo(transaksi::class);
+        return $this->belongsTo(transaksi::class)->with('tipe_transaksi','user');
     }
 
-    public function jadwals()
+    public function jadwal()
     {
-        return $this->belongsTo(jadwal::class);
+        return $this->belongsTo(jadwal::class)->with('film','studio');
     }
 
-    public function locations()
+    public function location()
     {
-        return $this->belongsTo(location::class);
+        return $this->belongsTo(location::class)->with('city');
     }
 }

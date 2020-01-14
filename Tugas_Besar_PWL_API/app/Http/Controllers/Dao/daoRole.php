@@ -10,13 +10,13 @@ class daoRole extends Controller
 {
     public function getAll()
     {
-        $test=role::with('users')->get();
+        $test=role::all();
         return response()->json($test, 200);
     }
 
     public function get($id)
     {
-        $test=role::with('users')->get()->find($id);
+        $test=role::all()>find($id);
         return response()->json($test, 200);
     }
 

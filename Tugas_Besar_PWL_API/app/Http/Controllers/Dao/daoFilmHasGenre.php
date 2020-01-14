@@ -12,8 +12,8 @@ class daoFilmHasGenre extends Controller
 {
     public function getAll()
     {
-        return film_has_genre::all();
-
+        $data = film_has_genre::with('genre','film')->get();
+        return response()->json($data,200);
     }
 
     public function get($id)

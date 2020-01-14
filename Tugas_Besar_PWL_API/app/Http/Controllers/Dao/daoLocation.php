@@ -12,13 +12,13 @@ class daoLocation extends Controller
 {
     public function getAll()
     {
-        $test=location::with('tickets')->get();
+        $test=location::with('city')->get();
         return response()->json($test, 200);
     }
 
     public function get($id)
     {
-        $test=location::with('intickets')->get()->find($id);
+        $test=location::with('city')->get()->find($id);
         return response()->json($test, 200);
     }
 

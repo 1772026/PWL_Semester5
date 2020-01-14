@@ -10,13 +10,14 @@ class daoGenre extends Controller
 {
     public function getAll()
     {
-        $test=genre::with('film_has_genres')->get();
+        $test=genre::all();
+
         return response()->json($test, 200);
     }
 
     public function get($id)
     {
-        $test=genre::with('film_has_genres')->get()->find($id);
+        $test=genre::all()->find($id);
         return response()->json($test, 200);
     }
 

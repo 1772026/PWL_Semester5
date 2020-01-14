@@ -7,24 +7,14 @@ use Illuminate\Database\Eloquent\Model;
 class transaksi extends Model
 {
     public $timestamps = false;
-    public function users()
+
+    public function user()
     {
-        return $this->belongsTo(user::class);
+        return $this->belongsTo(user::class)->with('role');
     }
 
-    public function tipe_transaksis()
+    public function tipe_transaksi()
     {
         return $this->belongsTo(tipe_transaksi::class);
     }
-
-    public function tickets()
-    {
-        return $this->hasMany(ticket::class);
-    }
-
-    public function transaksi_has_history_details()
-    {
-        return $this->hasMany(transaksi_has_history_detail::class);
-    }
-
 }

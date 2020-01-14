@@ -7,18 +7,14 @@ use Illuminate\Database\Eloquent\Model;
 class jadwal extends Model
 {
     public $timestamps = false;
-    public function tickets()
-    {
-        return $this->hasMany(ticket::class);
-    }
 
-    public function studios()
-    {
-        return $this->belongsTo(studio::class);
-    }
-
-    public function films()
+    public function film()
     {
         return $this->belongsTo(film::class);
+    }
+
+    public function studio()
+    {
+        return $this->belongsTo(studio::class);
     }
 }

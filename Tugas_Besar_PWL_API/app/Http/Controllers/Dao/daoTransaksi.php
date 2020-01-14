@@ -10,13 +10,13 @@ class daoTransaksi extends Controller
 {
     public function getAll()
     {
-        $test=transaksi::with('tickets','transaksi_has_history_details')->get();
+        $test=transaksi::with('user','tipe_transaksi')->get();
         return response()->json($test, 200);
     }
 
     public function get($id)
     {
-        $test=transaksi::with('tickets','transaksi_has_history_details')->get()->find($id);
+        $test=transaksi::with('user','tipe_transaksi')->get()->find($id);
         return response()->json($test, 200);
     }
 

@@ -11,13 +11,13 @@ class daoFilm extends Controller
 {
     public function getAll()
     {
-        $test=film::with('film_has_genres','jadwals')->get();
+        $test=film::all();
         return response()->json($test, 200);
     }
 
     public function get($id)
     {
-        $test=film::with('film_has_genres','jadwals')->get()->find($id);
+        $test=film::all()->find($id);
         return response()->json($test, 200);
     }
 

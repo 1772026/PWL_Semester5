@@ -10,12 +10,14 @@ class daoTransaksiHasHistoryDetail extends Controller
 {
     public function getAll()
     {
-        return transaksi_has_history_detail::all();
+        $data = transaksi_has_history_detail::with('transaksi', 'history_detail')->get();
+        return response()->json($data, 200);
     }
 
     public function get($id)
     {
-        return transaksi_has_history_detail::all()->find($id);
+        $data = transaksi_has_history_detail::with('transaksi', 'history_detail')->get()->find($id);
+        return response()->json($data, 200);
     }
 
     public function add(Request $request)
